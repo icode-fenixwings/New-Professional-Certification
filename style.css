@@ -29,7 +29,7 @@ body {
       rgba(18, 18, 18, 0.8) 60%,
       rgba(18, 18, 18, 1) 100%
     ),
-    url("/images/hero-background2.jpg");
+    url("./images/hero-background2.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -409,7 +409,7 @@ nav .nav-links .order-button:hover {
 }
 footer {
   background: linear-gradient(rgba(18, 18, 18, 0.7), rgba(18, 18, 18, 0.7)),
-    url("/images/hero-background.jpg"); /* Replace with your image path */
+    url("./images/hero-background.jpg"); /* Replace with your image path */
   background-size: cover;
   background-position: center;
   color: var(--text-color-secondary);

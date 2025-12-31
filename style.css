@@ -43,13 +43,21 @@ nav {
   align-items: center;
   border-bottom: 1px solid var(--border-color);
 }
+nav .logo-container{
+  background-color: red;
+    width: 150px;
+    height: 40px;
+    overflow: hidden;
+    border-radius: 20px 0;
+}
+
  nav .loggo {
-    width: 250px;
-    height: 150px;
-  /*color: var(--text-color-secondary);
-  font-size: 1.5rem;
-  font-weight: 500;
-  font-family: "Montserrat Alternates", sans-serif;*/
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: fixed;
+  top: -10px;
+  left: 20px;
 }
 
 nav .nav-links {

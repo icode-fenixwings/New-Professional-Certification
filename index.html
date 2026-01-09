@@ -9,6 +9,15 @@
     <link rel="stylesheet" href="responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+       (function(){
+      emailjs.init({
+        publicKey: "sX6Es79RfGtGmnkRU",
+      });
+   })();
+</script>
 </head>
 
 <body>
@@ -19,7 +28,6 @@
                     <img src="images/logo-image.jpg" class="loggo">
                 </div>
                 
-               <!-- <p class="logo">Brown<span>Sip</span></p>-->
                 <ul class="nav-links">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#profile">Profile</a></li>
@@ -28,7 +36,7 @@
                     <li><a href="#about">About</a></li>
                     <li><a href="#testimonials">Testimonials</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <li><a href="#" class="order-button">Purchase</a></li>
+                    <li><a href="#menu" class="order-button">Purchase</a></li>
                 </ul>
                 <div class="hamburger" id="menuBtn">
                     <span></span>
@@ -40,7 +48,7 @@
                 <h2>Engineering Structures That Stand the <span>Test of Time.</span></h2>
                 <p>At Professional Certification,
                    we are a certified expertise you can trust — our engineering practices meet recognized industry standards, ensuring safety, quality, and long-lasting structures.</p>
-                <a href="#menu" class="cta-btn">Connect With Us On WhatApp</a>
+                <a href="https://wa.me/+2348030966948" target="_blank" class="cta-btn">Chat Us On WhatApp</a>
 
             </div>
         </section>
@@ -51,7 +59,7 @@
             </div>
             <div class="about-us">
                 <div class="about-left">
-                    <img src="images/profile-picture.jpeg" alt="">
+                    <img src="images/directors1-image.jpeg" alt="profile picture">
                 </div>
                 <div class="about-right">
                     <h3>Professional Certification CEO</h3>
@@ -64,12 +72,51 @@
                         his hands-on leadership style and attention to detail, Engr. Cole has successfully led multidisciplinary teams, 
                         ensured regulatory compliance, and maintained the highest standards of safety and quality across all projects.</p>
                     <div class="about-cta">
-                       <!-- <a href="#menu" class="cta-button">Learn More</a>-->
+                    </div>
+                </div>
+            </div><br/><hr/><br/>
+
+            </div>
+                             <!--director 2-->
+            <div class="about-us">
+                <div class="about-left">
+                    <img src="images/director2-image.jpg" alt="profile picture">
+                </div>
+                <div class="about-right">
+                    <h4>Professional Certification CEO</h4>
+                    <p>Engr. Daniel A. Cole is a seasoned construction and building engineering professional with over 18 years of 
+                        experience delivering high-impact residential, commercial, and infrastructure projects. As the CEO, he provides
+                         strategic leadership, oversees technical operations, and drives the company’s commitment to engineering 
+                         structures that stand the test of time.</p>
+
+                    <p>He holds a degree in Civil Engineering and is professionally certified with recognized engineering bodies. Known for 
+                        his hands-on leadership style and attention to detail, Engr. Cole has successfully led multidisciplinary teams, 
+                        ensured regulatory compliance, and maintained the highest standards of safety and quality across all projects.</p>
+                    <div class="about-cta">
+                    </div>
+                </div>
+            </div><br/><hr/><br/><br/>
+                                 <!--director 3-->
+
+            <div class="about-us">
+                <div class="about-left">
+                    <img src="images/directors3-image.jpg" alt="">
+                </div>
+                <div class="about-right">
+                    <h4>Professional Certification CEO</h4>
+                    <p>Engr. Daniel A. Cole is a seasoned construction and building engineering professional with over 18 years of 
+                        experience delivering high-impact residential, commercial, and infrastructure projects. As the CEO, he provides
+                         strategic leadership, oversees technical operations, and drives the company’s commitment to engineering 
+                         structures that stand the test of time.</p>
+
+                    <p>He holds a degree in Civil Engineering and is professionally certified with recognized engineering bodies. Known for 
+                        his hands-on leadership style and attention to detail, Engr. Cole has successfully led multidisciplinary teams, 
+                        ensured regulatory compliance, and maintained the highest standards of safety and quality across all projects.</p>
+                    <div class="about-cta">
                     </div>
                 </div>
             </div>
-
-            </div>
+                         
         </section>
 
 
@@ -80,7 +127,7 @@
             <div class="menu-container">
                 <div class="card">
                     <div class="card-header">
-                        <img src="images/home-picture1.jpg" alt="">
+                        <img src="images/homes-picture1.jpg" alt="">
                         <h3>The Sapphire Residence</h3>
                     </div>
                     <p>A modern luxury home designed for comfort, elegance, and everyday living.
@@ -140,7 +187,7 @@
                 </div>
                 <div class="card">
                     <div class="card-header">
-                        <img src="images/home-picture6.jpg" alt="">
+                        <img src="images/homes-picture6.jpg" alt="">
                         <h3>Royal Haven Mansion</h3>
                     </div>
                     <p>A premium mansion built for luxury, prestige, and timeless appeal.
@@ -258,16 +305,16 @@
                     <h3>Get In Touch</h3>
                     <form class="form-container">
                         <div class="input-container">
-                            <input type="text" placeholder="Your Name">
+                            <input id="name" type="text" placeholder="Your Name">
                         </div>
                         <div class="input-container">
-                            <input type="text" placeholder="Your Email">
+                            <input id="email" type="text" placeholder="Your Email">
                         </div>
                         <div class="input-container">
-                            <textarea placeholder="Your Message"></textarea>
+                            <textarea id="message" placeholder="Your Message"></textarea>
                         </div>
                         <div class="button-container">
-                            <button class="cta-button">Send Message</button>
+                            <button id="send-message" class="cta-button" onclick="sendMail()";>Send Message</button>
                         </div>
                     </form>
                 </div>
@@ -315,7 +362,7 @@
             </div>
             <div class="footer-bottom">
                 <p>&copy; 2025 Professional Certification</p>
-            </div>
+
         </footer>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -328,6 +375,20 @@
         function openMenu() {
             links.classList.toggle("open");
         }
+
+         function sendMail() {
+        let  params = {
+         name:  document.getElementById("name").value,
+         email: document.getElementById("email").value,
+         meassage: document.getElementById("message").value,
+        }
+
+        emailjs.send("service_39wekap","template_tjmpmjx",params).then(alert("Your Email has been sent succesfully!"));
+         }
+
+        
+
+
     </script>
 </body>
 

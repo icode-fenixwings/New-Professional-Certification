@@ -224,10 +224,10 @@ nav .nav-links .order-button:hover {
   font-size: 1.5rem;
 }
 .menu-section .menu-container .card .card-header img {
-  width: 100px;
+  width: 130px;
   height: 100px;
   object-fit: cover;
-  border-radius: 50%;
+  border-radius: 20px;
 }
 .menu-section .menu-container .card p {
   margin: 15px 0;
